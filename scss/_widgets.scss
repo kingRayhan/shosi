@@ -1,0 +1,254 @@
+.sidebar{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.widget{
+	margin: 65px 0;
+	.widget-title{
+		text-align: center;
+		margin-bottom: 25px;
+		text-transform: uppercase;
+		h4{
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 22px;
+		}
+		.circle-line{
+			position: relative;
+			&:after{
+			    content: "";
+			    position: absolute;
+			    top: 8px;
+			    left: 50%;
+			    background: $color_scheme;
+			    height: 3px;
+			    width: 75px;
+			    margin-left: -37.5px;
+			}
+		}
+	}
+}
+
+
+
+/**
+ * About me widget
+ */
+.widget-about {
+    text-align: center;
+    img{
+	    border-radius: 100%;
+	    padding-bottom: 18px;
+    }
+}
+
+
+/**
+ * Tag widget
+ */
+.tags{
+	li {
+	    display: inline-block;
+	    margin-bottom: 14px;
+	    margin-right: 10px;
+	    a{
+	    	&:hover{
+	    		.tag{
+	    			background-color: $color_scheme;
+	    		}
+	    	}
+	    }
+	}
+}
+
+.tag {
+    display: inline-block;
+    background-color: #111;
+    color: #fff;
+    line-height: 25px;
+    font-size: 10px;
+    padding: 0 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+	ul {
+	    padding-left: 0;
+	    list-style: none;
+	    text-align: left;
+	}
+}
+
+
+
+
+/**
+ * Recent post
+ */
+
+.recent-post{
+	margin-bottom: 15px;
+	.recent-post-thumb{
+		float: left;
+		margin-right: 15px;
+	}
+	.title{
+		margin-top: 0;
+	    font-family: 'Open Sans Condensed', sans-serif;
+	    font-style: normal;
+	    font-weight: 700;
+	    font-size: 17px;
+	    a{
+	    	color: #111;
+	    	&:hover{
+	    		color: $color_scheme;
+	    	}
+	    }
+	}
+}
+
+
+
+/**
+ * Teets
+ */
+.recent-tweets{
+	.tweet {
+	    display: block;
+	    padding: 0 20px;
+	    margin-bottom: 16px;
+		i {
+		    color: $color_scheme;
+		    font-size: 18px;
+		    float: left;
+		    padding: 5px 6px 6px 0;
+		}
+		p {
+		    font-size: 13px;
+		    font-family: 'Lora', sans-serif;
+		    font-weight: 400;
+		    line-height: 21px;
+		    color: #555555;
+		}
+		span {
+		    color: #868686;
+		    font-size: 10px;
+		    padding-left: 6px;
+		    font-family: 'Montserrat', sans-serif;
+		    font-weight: 300;
+		    display: block;
+		    padding-left: 24px;
+		} 
+		&:last-child {
+		    margin-bottom: 0;
+		}
+	}
+}
+.widget-recent-tweets {
+    border-top: 3px solid #ffc2ca;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.06);
+    padding: 40px 18px;
+    margin-bottom: 40px;
+}
+
+/**
+ * Categories widget
+ */
+
+.categories{
+	ul {
+	    list-style: none;
+	    padding-left: 0;
+		li {
+		    margin-bottom: 18px;
+		    padding: 0 20px;
+		    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05);
+			a {
+				span {
+				    color: #000;
+				    float: right;
+				}
+			    line-height: 30px;
+			    font-size: 10px;
+			    font-family: 'Montserrat', sans-serif;
+			    font-weight: 600;
+			    letter-spacing: 0.8px;
+			    text-transform: uppercase;
+			    -webkit-transition: all 0.25s ease-in-out;
+			    transition: all 0.25s ease-in-out;
+				&:hover {
+				    color: #000;
+				}
+			}
+		}
+	}
+}
+
+
+/**
+ * Instagram widget
+ */
+.widget-instagram {
+	text-align: center;
+}
+.insta-photos img {
+    height: 144px;
+    width: 144px;
+    -o-object-fit: cover;
+    object-fit: cover;
+    opacity: 0.9;
+    text-align: center;
+    padding: 7px;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+    	opacity: 1;
+	}
+}
+
+/**
+ * Subscribe widget
+ */
+
+.widget-subscribe {
+	a {
+	    display: block;
+	    text-align: center;
+	    width: 100%;
+	    padding: 13px;
+
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-style: normal;
+			font-weight: 700;
+			font-size: 18px;
+
+	    text-transform: uppercase;
+	    color: #fff;
+	    background-color: $color_scheme;
+	    margin-top: 10px;
+	    letter-spacing: 0.4px;
+	    word-spacing: 2px;
+	    -webkit-transition: all 0.25s ease-in-out;
+	    transition: all 0.25s ease-in-out;
+
+	    &:hover{
+	    	background-color: #C7C7C7;
+	    }
+	}
+}
+
+.subscribe {
+    width: 100%;
+    border: 0;
+    background-color: #f8f8f8;
+    color: #555;
+    padding: 14px 18px;
+    font-size: 13px;
+    letter-spacing: 0.6px;
+    word-spacing: 2px;
+}

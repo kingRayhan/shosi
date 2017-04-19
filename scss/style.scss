@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700');
+
+$color_scheme: #3CEEB9;
+
+body{
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+a{
+	color: $color_scheme;
+	transition: .2s;
+	&:hover{
+		text-decoration: none;
+		color:#111;
+	}
+}
+img{
+	max-width: 100%;
+}
+/**
+ * ===========================================
+ * 	1. Header
+ * ===========================================
+ */
+
+@import "header";
+
+
+/**
+ * ===========================================
+ * 	2. Blog List
+ * ===========================================
+ */
+
+@import "blog-list";
+
+/**
+ * ===========================================
+ * 	3. Footer
+ * ===========================================
+ */
+@import "footer";
+
+
+@import "widgets";
